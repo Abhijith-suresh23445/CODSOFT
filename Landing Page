@@ -1,1 +1,141 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Landing Page</title>
+  <style type="text"></style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+         <div class="logo">Travel Guru</div>
+         <div class="Menu"><a href="'#">HOME</a>
+            <a href="'#">Hill Stations</a>
+            <a href="'#">Best Offer</a>
+            <a href="'#">Our Sites</a>
+            <a href="'#">Contact us</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
 
+        </nav>
+        <section class="header-txt">
+            <span>Enjoy</span>
+            <h1>Let us book your tour</h1>
+
+            <br>
+            <a href="#">Book your Trip</a>
+        </section>
+        
+
+    </header>
+</body>
+</html>
+
+
+
+#style.css
+
+text{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('images/ben-michel-rNXb9r22W44-unsplash.jpg');
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family:'Times New Roman', Times, serif;
+}
+.Menu a{
+   
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 20px;
+    position:relative;
+
+}
+.Menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear; 
+}
+.Menu a:hover:before{
+
+   width: 90%;
+}
+
+.register a{
+
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+
+
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+    transition: 0.4s ;
+}
+.header-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: whitesmoke;
+}
+.header-txt span{
+
+    letter-spacing: 5px;
+}
+.header-txt h1{
+    font-size: 3.5em;
+}
+.header-txt a{
+    text-decoration: none;
+    background:indianred;
+    color:whitesmoke;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.header-txt a:hover{
+    background: transparent;
+    border: 1px solid indianred ;
+    transition: 0.4s ;
+}
+
+#image address
+https://github.com/Abhijith-suresh23445/CODSOFT/
