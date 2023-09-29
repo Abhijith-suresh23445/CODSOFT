@@ -1,0 +1,441 @@
+#HTML Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style type="text"></style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link  href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700@display=swap"
+     rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+</head>   
+<body>
+    
+        <div class="name">
+            <nav>
+            <h2 class="logo">Portf<span>olio</span></h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact Me</a></li>
+              </ul>
+              
+            </nav>
+
+            <div class="content">
+                <h4>Hi, my name is</h4>
+                <h1>Abhijith Suresh</h1>
+                
+             </div>
+        </div>
+
+        <section class="about">
+             <div class="about-text">
+                <h2>About ME</h2>
+                <p>I am computer science student at Nowrosjee Wadia College. I am very passionate about 
+                    technology and always eager to learn new things. I am also interested in web developement and 
+                    programming. I make the websites more interactive with web animations. A responsive
+                    design makes your website accesible to all user, regardless of their device.</p>
+            </div>
+        </section>
+
+        <div class="service">
+            <div class="title">
+                <h2>My skills</h2>
+            </div>
+
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>Web developement</h5>
+                    <div class="para">
+                        <p>I am very entrigued by websites and always wanted to learn how they are made.
+                        I have created few projects.I am currently doing a web developement course on Udemy.</p>
+
+                        <p style="text-align: center;">
+                          <a class="button" href="#">Read More</a>
+                        </p>      
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>Coding</h5>
+                    <div class="para">
+                        <p>I love programming and I have always liked to solve a problem take it as a challenge and get to 
+                            the solution.I have particular interest in C programming language.</p>
+
+                        <p style="text-align: center;">
+                          <a class="button" href="#">Read More</a>
+                        </p>      
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>Projects</h5>
+                    <div class="para">
+                        <p>I have created a Drum's kit project and Simon Game which was very fun to make and have improved my
+                            skills.I have got certificates from Hacker Rank and Great learning.
+                         </p>
+
+                        <p style="text-align: center;">
+                          <a class="button" href="#">Read More</a>
+                        </p>      
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="contact-me">
+            <p>Let me built you a website.</p>
+            <a class="button-two" href="#">Hire Me</a>
+        </div>
+        <div class="resume">
+            <h2>Check out my resume to know more about me</h2>
+            <a href="https://drive.google.com/file/d/1eRtsstpw2dhEBbNQgBlayrXMWHxCC69D/view?usp=drive_link"class="btn-3">Download Resume</a>
+            
+        </div>
+        
+        
+        <div class="container">
+           <a href="#" class="btn">CONTACT ME</a>
+        </div>
+        <div class="end">
+        <p>Copyright by Abhijith 2023.</p>
+        </div>
+         
+    
+</body> 
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# CSS code
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+.name
+{
+    
+    height:100vh;
+    width:100%;
+    background-image:url(./images/IMG-20230929-WA0001.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    
+}
+.logo
+{
+    color: white;
+    font-size: 35px;
+   letter-spacing: 10px;
+   cursor: pointer;
+}
+span
+{
+    color: blueviolet;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10px 25px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+nav ul li a:hover
+{
+    color: blueviolet;
+    transition: 0.4s;
+
+}
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1
+{
+    color: white;
+    margin: 20px 0px 20px ;
+    font-size: 75px;
+}
+h4
+{
+    color: blueviolet;
+    letter-spacing: 2px ;
+    font-size: 20px;
+
+}
+.about
+{
+    width: 100%;
+    padding:100px 0px;
+    background-color: #191919;
+
+
+}
+.about-text
+{
+    width: 550px;
+    
+}
+.about-text h2
+{
+  
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translate(100%,100%);
+
+}
+.about-text p
+{
+    color: blueviolet;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 75px;
+    text-align: center;
+    transform: translate(100%,100%);
+}
+.service
+{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+.title h2
+{
+    color: white;
+    font-size: 75px;
+    width:1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.box
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+
+}
+.card
+{
+    height: 360px;
+    width:335px;
+    padding:20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+.card i
+{
+     
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    margin: 25px 0px;
+    color: red;
+}
+h5
+{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.para p
+{
+    color: blueviolet;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    
+}
+.card .button
+{
+    margin-top: auto;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    margin-top: 50%;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.card .button:hover
+{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+
+}
+.contact-me
+{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p
+{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:25px ;
+
+}
+.contact-me .button-two
+{
+
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.contact-me .button-two:hover
+{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.container
+{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.container .btn
+{
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 15px;
+    background:red;
+    font-size: 18px;
+    border-radius: 6px;
+    color:black;
+    outline: none;
+    
+    
+   
+}
+.container .btn:hover
+{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+
+}
+.resume
+{
+    background: #191919;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    
+    
+
+   
+
+}
+.resume .btn-3
+{
+    
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px solid transparent;
+    font-weight: bold;
+    margin: auto;
+    padding: 3px 15px;
+    border-radius:6px;
+    transition: 0.4s;
+
+
+}
+.resume .btn-3:hover
+{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+    
+
+
+.end
+{
+    position: absolute;
+    color:white;
+    width: 100%;
+    height: 80px;
+    background: #191919;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f00;   
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#image address:
+IMG-20230929-WA0001.jpg file.
